@@ -1,0 +1,18 @@
+body{
+    background-color: aqua!important;
+    position: relative;
+
+}
+.input{
+    position: absolute;
+    margin-top: 10%;
+    width: 50%!important;
+    margin-left: 25%;
+}
+
+.weatherCard{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 32%;
+    width: 500px;
+}
