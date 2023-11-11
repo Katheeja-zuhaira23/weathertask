@@ -10,25 +10,23 @@ function weatherData() {
       return response.json();
     })
     .then(data => {
-      console.log(data);
       // Process the weather data here
-      let weatherCard = document.getElementsByClassName("weatherCard")[0]
+      let weatherCard = document.getElementsByClassName("weatherCard")[0];
       weatherCard.innerHTML = `<div class="card" style="width: 18rem;">
-        <img src="http://static.vecteezy.com/system/resources/previews/000/098/703/original/vector-weather-icon-set.jpg" class="card-img-top" alt="weather image">
+        <img src="https://img.freepik.com/free-vector/weather-emoticon-flat-icon-set_74855-6711.jpg?size=626&ext=jpg&ga=GA1.1.1270437882.1699697691&semt=sph" class="card-img-top" alt="weather image">
         <div class="card-body">
           <h5 class="card-title">WEATHER DATA</h5>
-          <p class="card-text">TEMPARATURE: ${data.main.temp} </p>
+          <p class="card-text">TEMPERATURE: ${data.main.temp} </p>
           <p class="card-text">WINDSPEED: ${data.wind.speed} </p>
           <p class="card-text">SIGHT: ${data.weather[0].description} </p>
         </div>
-      </div>`
+      </div>`;
     })
-
     .catch(error => {
       console.error('error:', error);
     });
-
 }
+
 
 // function weatherData(){
 
